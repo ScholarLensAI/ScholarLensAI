@@ -1,0 +1,6 @@
+[submodule "scholarlensAI-FE"]
+	path = scholarlensAI-FE
+	url = git@github.com:ScholarLensAI/scholarlensAI-FE.git
+[submodule "scholarlensAI-BE"]
+	path = scholarlensAI-BE
+	url = git@github.com:ScholarLensAI/scholarlensAI-BE.git
