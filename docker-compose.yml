@@ -1,0 +1,41 @@
+services:
+  backend:
+    build:
+      context: ./scholarlensAI-BE
+      args:
+        UPSTAGE_API_KEY: ${UPSTAGE_API_KEY:-}
+        UPSTAGE_BASE_URL: ${UPSTAGE_BASE_URL:-https://api.upstage.ai/v1}
+        LOG_LEVEL: ${LOG_LEVEL:-INFO}
+        DEBUG: ${DEBUG:-1}
+    command: python3 main.py
+    working_dir: /app
+    volumes:
+      - ./scholarlensAI-BE:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - UPSTAGE_API_KEY
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - DEBUG=${DEBUG:-1}
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./scholarlensAI-FE
+    command: npm run dev -- --hostname 0.0.0.0 --port 3000
+    working_dir: /app
+    volumes:
+      - ./scholarlensAI-FE:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL:-http://localhost:8000}
+      - BACKEND_INTERNAL_URL=${BACKEND_INTERNAL_URL:-http://backend:8000}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+networks:
+  default:
+    name: scholarlens
