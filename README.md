@@ -115,8 +115,8 @@ ScholarLensAI/
 | `/api/chat` | POST | Q&A 채팅 |
 
 **전체 API**: http://localhost:8000/docs
-**상세 설명**: [백엔드.md](scholarlensAI-BE/README.md)
 
+**상세 설명**: [Backend.md](https://github.com/ScholarLensAI/scholarlensAI-BE/blob/main/README.md)
 
 ## 🔗 문서 가이드
 각 문서의 목적과 대상:
@@ -125,5 +125,5 @@ ScholarLensAI/
 |------|------|
 | **README.md** (현재) | 프로젝트 전체 개요 및 아키텍처 |
 | **[QUICKSTART.md](QUICKSTART.md)** | 설치 및 실행 가이드 |
-| **[Backend](https://github.com/ScholarLensAI/scholarlensAI-BE/blob/main/README.md)** | Backend API 및 서비스 상세 |
-| **[Frontend](https://github.com/ScholarLensAI/scholarlensAI-FE/blob/main/README.md)** | Frontend 웹 화면 실행 및 구조 설명 |
+| **[Backend.md](https://github.com/ScholarLensAI/scholarlensAI-BE/blob/main/README.md)** | Backend API 및 서비스 상세 |
+| **[Frontend.md](https://github.com/ScholarLensAI/scholarlensAI-FE/blob/main/README.md)** | Frontend 웹 화면 실행 및 구조 설명 |
