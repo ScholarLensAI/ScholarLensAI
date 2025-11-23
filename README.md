@@ -125,5 +125,5 @@ ScholarLensAI/
 |------|------|
 | **README.md** (현재) | 프로젝트 전체 개요 및 아키텍처 |
 | **[QUICKSTART.md](QUICKSTART.md)** | 설치 및 실행 가이드 |
-| **[백엔드.md](./scholarlensAI-BE/README.md)** | Backend API 및 서비스 상세 |
-| **[프론트엔드.md](scholarlensAI-BE @ 664b0a8/README.md)** | Frontend 컴포넌트 및 페이지 |
+| **[Backend](./scholarlensAI-BE)** | Backend API 및 서비스 상세 |
+| **[Frontend](./scholarlensAI-FE)** | Frontend 웹 화면 실행 및 구조 설명 |
