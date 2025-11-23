@@ -6,8 +6,8 @@ Upstage AI 기반 논문 리딩 어시스턴트
 
 ## 프로젝트 개요
 
-ScholarLens AI는 연구자와 학생들이 논문을 효율적으로 읽고 이해할 수 있도록 돕는 AI 어시스턴트입니다.
-Upstage의 Document Parse API와 Solar LLM을 활용하여 논문을 자동으로 파싱하고, 섹션별 요약, 정보 추출, Q&A 기능을 제공합니다.
+ScholarLens AI는 사용자가 논문을 효율적으로 읽고 이해할 수 있도록 돕는 AI 어시스턴트입니다.
+Upstage의 Document Parse API를 통하여 논문을 자동으로 파싱하고, Upstage의 Solar Pro2 API를 이용하여 섹션별 요약, 정보 추출, Q&A 기능을 제공합니다.
 
 
 ## 목표 사용자
@@ -37,22 +37,22 @@ Upstage의 Document Parse API와 Solar LLM을 활용하여 논문을 자동으�
 │                    ScholarLens AI                       │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
-│  ┌─────────────────┐         ┌────────────────────┐   │
-│  │   Frontend      │ ◄─────► │     Backend        │   │
-│  │   (Next.js)     │  REST   │    (FastAPI)       │   │
-│  │                 │   API   │                    │   │
-│  │  - PDF Viewer   │         │  - Document Parse  │   │
-│  │  - UI/UX        │         │  - AI Services     │   │
-│  │  - State Mgmt   │         │  - API Endpoints   │   │
-│  └─────────────────┘         └────────────────────┘   │
+│  ┌─────────────────┐         ┌────────────────────┐     │
+│  │   Frontend      │ ◄─────► │     Backend        │     │
+│  │   (Next.js)     │  REST   │    (FastAPI)       │     │
+│  │                 │   API   │                    │     │
+│  │  - PDF Viewer   │         │  - Document Parse  │     │
+│  │  - UI/UX        │         │  - AI Services     │     │
+│  │  - State Mgmt   │         │  - API Endpoints   │     │
+│  └─────────────────┘         └────────────────────┘     │
 │                                       │                 │
 │                                       ▼                 │
-│                              ┌─────────────────┐       │
-│                              │  Upstage API    │       │
-│                              │                 │       │
-│                              │  - Doc Parse    │       │
-│                              │  - Solar LLM    │       │
-│                              └─────────────────┘       │
+│                              ┌─────────────────┐        │
+│                              │  Upstage API    │        │
+│                              │                 │        │
+│                              │  - Doc Parse    │        │
+│                              │  - Solar LLM    │        │
+│                              └─────────────────┘        │
 └─────────────────────────────────────────────────────────┘
 ```
 
