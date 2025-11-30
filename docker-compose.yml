@@ -1,15 +1,4 @@
 services:
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
-
   backend:
     build:
       context: ./scholarlensAI-BE
@@ -27,13 +16,8 @@ services:
       - UPSTAGE_API_KEY
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       - DEBUG=${DEBUG:-1}
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
     ports:
       - "8000:8000"
-    depends_on:
-      redis:
-        condition: service_healthy
 
   frontend:
     build:
