@@ -5,7 +5,7 @@
 ## 사전 준비
 
 ### 필수 요구사항
-- Python 3.9+
+- Python 3.10+
 - Node.js 18+
 - Upstage API Key ([발급 받기](https://console.upstage.ai/))
 
@@ -31,7 +31,7 @@ source ~/.bashrc
 
 ### 방법 1: Docker Compose (권장)
 
-**장점**: 한 번에 Frontend + Backend 모두 실행
+한 번에 Frontend + Backend 모두 실행
 
 #### Step 1: 저장소 복제
 ```bash
@@ -142,8 +142,9 @@ npm run dev
 #### 웹 UI 사용
 1. http://localhost:3000 접속
 2. **Upload PDF** 버튼 클릭 또는 드래그 앤 드롭
-3. PDF 선택 (최대 50MB)
-4. 파싱 완료 대기 (10-30초)
+  ![alt text](<images/Screenshot from 2025-12-06 19-47-11.png>){: width="65%" height="65%"}
+4. PDF 선택 (최대 50MB)
+5. 파싱 완료 대기 (10-30초)
 
 #### curl 사용
 ```bash
@@ -191,25 +192,7 @@ curl -X POST http://localhost:8000/api/summarize/section \
 
 ---
 
-### 3. 정보 추출
-
-```bash
-# Figures 추출
-curl http://localhost:8000/api/extract/figures
-
-# Tables 추출
-curl http://localhost:8000/api/extract/tables
-
-# Equations 추출
-curl http://localhost:8000/api/extract/equations
-
-# References 추출
-curl http://localhost:8000/api/extract/references
-```
-
----
-
-### 4. Q&A 챗봇
+### 3. Q&A 챗봇
 
 ```bash
 curl -X POST http://localhost:8000/api/chat \
@@ -227,7 +210,7 @@ curl -X POST http://localhost:8000/api/chat \
 
 ---
 
-### 5. 번역
+### 4. 번역
 
 ```bash
 curl -X POST http://localhost:8000/api/translate \
