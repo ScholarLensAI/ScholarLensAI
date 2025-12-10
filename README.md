@@ -51,12 +51,12 @@ This project manages Frontend (Next.js) and Backend (FastAPI) as independent sub
 │  └─────────────────┘         └────────────────────┘     │
 │                                       │                 │
 │                                       ▼                 │
-│                              ┌─────────────────┐        │
-│                              │  Upstage API    │        │
-│                              │                 │        │
-│                              │  - Doc Parse    │        │
-│                              │  - Solar LLM    │        │
-│                              └─────────────────┘        │
+│                              ┌────────────────────┐     │
+│                              │  Upstage API       │     │
+│                              │  - Document Parse  │     │
+│                              │  - Inform Extract  │     │
+│                              │  - Solar LLM       │     │
+│                              └────────────────────┘     │
 └─────────────────────────────────────────────────────────┘
 ```
 
