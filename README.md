@@ -66,7 +66,7 @@ This project manages Frontend (Next.js) and Backend (FastAPI) as independent sub
 |------|------|
 | **Backend** | FastAPI, Python 3.10+ |
 | **Frontend** | Next.js, React 18, TypeScript |
-| **AI** | Upstage Document Parse, Solar LLM |
+| **AI** | Upstage Solar LLM, Document Parse, Information Extract |
 | **Styling** | Tailwind CSS, shadcn/ui |
 | **Infrastructure** | Docker |
 
