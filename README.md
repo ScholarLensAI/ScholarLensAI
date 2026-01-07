@@ -1,7 +1,7 @@
 # ScholarLens AI
 
 Upstage AI-based Research Paper Reading Assistant
-
+![alt text](<images/Screenshot from 2025-12-09 10-39-30.png>)
 ---
 
 ## Project Overview
@@ -13,6 +13,8 @@ It automatically parses paper structure through Upstage **Document Parse API** a
 - Context-based Q&A
 - Semantic-based automatic highlighting
 - Multilingual translation
+
+![alt text](<images/Screenshot from 2025-12-09 10-54-35.png>)
 
 #### Target Users
 
